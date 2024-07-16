@@ -1,0 +1,20 @@
+# ninja log v5
+5	563	7428236679090041	thirthproject_autogen/timestamp	7e0e72758708675d
+570	2532	7428236699456919	CMakeFiles/thirthproject.dir/animal.cpp.obj	f55f3fe88fe131ef
+5	563	7428236679090041	thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+2712	2925	7428236703325459	thirthproject.exe	d6ea9afcf9b0ba92
+5	563	7428236679090041	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+5	563	7428236679090041	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/timestamp	7e0e72758708675d
+566	2712	7428236701208529	CMakeFiles/thirthproject.dir/main.cpp.obj	75ae98d9aaf8bd1c
+563	2546	7428236699536685	CMakeFiles/thirthproject.dir/thirthproject_autogen/mocs_compilation.cpp.obj	f38842a9735600f8
+578	2508	7428236699197592	CMakeFiles/thirthproject.dir/test.cpp.obj	52e6288eff166fd6
+4	126	7428237135952991	thirthproject_autogen/timestamp	7e0e72758708675d
+4	126	7428237135952991	thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+4	126	7428237135952991	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/timestamp	7e0e72758708675d
+4	126	7428237135952991	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+4	123	7428237227580302	thirthproject_autogen/timestamp	7e0e72758708675d
+4	123	7428237227580302	thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+4	123	7428237227580302	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/timestamp	7e0e72758708675d
+4	123	7428237227580302	D:/thirthproject/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug/thirthproject_autogen/mocs_compilation.cpp	7e0e72758708675d
+126	2550	7428237254000014	CMakeFiles/thirthproject.dir/main.cpp.obj	75ae98d9aaf8bd1c
+2550	2711	7428237255551569	thirthproject.exe	d6ea9afcf9b0ba92

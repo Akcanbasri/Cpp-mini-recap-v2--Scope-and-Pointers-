@@ -67,108 +67,110 @@ void wow() {
     // Pointer autatically deleted for us
 }
 
+// QObject can not be copyied
+
 int main(int argc, char *argv[]) {
 
     QCoreApplication a(argc, argv);
-    // Scope
-    qInfo("***********************************************");
-    int number = 75;
-    qInfo() << "1- numnber: " << &number << " =" << number;
-    test(number);
+    // // Scope
+    // qInfo("***********************************************");
+    // int number = 75;
+    // qInfo() << "1- numnber: " << &number << " =" << number;
+    // test(number);
 
-    bool ok = true;
+    // bool ok = true;
 
-    if (ok) {
-        // Scope
-        int number = 1000; // eğer int yapmazsak main içindeki sayıyı değiştiriyordu.
-        qInfo() << "3- numnber: " << &number << " =" <<
-        number;
-    }
-    qInfo() << "4- numnber: " << &number << " =" << number;
+    // if (ok) {
+    //     // Scope
+    //     int number = 1000; // eğer int yapmazsak main içindeki sayıyı değiştiriyordu.
+    //     qInfo() << "3- numnber: " << &number << " =" <<
+    //     number;
+    // }
+    // qInfo() << "4- numnber: " << &number << " =" << number;
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    // Scoping with classes
-    QString name = "Basri";
-    qInfo() << "My name is at" << &name << "=" << name;
+    // // Scoping with classes
+    // QString name = "Basri";
+    // qInfo() << "My name is at" << &name << "=" << name;
 
-    Animal cat(&a, "bulut");
-    Animal dog(&a, "boncuk");
-    Animal person(&a, "yunus");
+    // Animal cat(&a, "bulut");
+    // Animal dog(&a, "boncuk");
+    // Animal person(&a, "yunus");
 
-    person.sayHello("Hola mi amor!");
+    // person.sayHello("Hola mi amor!");
 
-    cat.name = "My Cat";
-    dog.name = "My Dog";
-    qInfo() << person.name;
-    qInfo() << cat.name;
-    qInfo() << dog.name;
+    // cat.name = "My Cat";
+    // dog.name = "My Dog";
+    // qInfo() << person.name;
+    // qInfo() << cat.name;
+    // qInfo() << dog.name;
 
-    qInfo("***********************************************");
-    myname = "Merve";
-    qInfo() << myname;
+    // qInfo("***********************************************");
+    // myname = "Merve";
+    // qInfo() << myname;
 
-    bool test = true;
-    if (test) {
-        QString myname = "Mustafa";
-        qInfo() << myname;
-        qInfo() << ::myname;
-    }
+    // bool test = true;
+    // if (test) {
+    //     QString myname = "Mustafa";
+    //     qInfo() << myname;
+    //     qInfo() << ::myname;
+    // }
 
-    qInfo() << myname;
-    testMyName();
+    // qInfo() << myname;
+    // testMyName();
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    qInfo() << "Cout:" << Animal::count;
+    // qInfo() << "Cout:" << Animal::count;
 
-    qInfo("***********************************************");
-    // Test t;
-    // t.doStuff();
-    // t.doOtherStuff();
+    // qInfo("***********************************************");
+    // // Test t;
+    // // t.doStuff();
+    // // t.doOtherStuff();
 
-    Test::doOtherStuff();
+    // Test::doOtherStuff();
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    // Practice
-    int age = 0;
-    qInfo() << "Enter your age:";
-    cin >> age;
+    // // Practice
+    // int age = 0;
+    // qInfo() << "Enter your age:";
+    // cin >> age;
 
-    qInfo() << "Ten more:" << addTen(age);
-    dogYear(age);
+    // qInfo() << "Ten more:" << addTen(age);
+    // dogYear(age);
 
-    // Pointers
-    QString name1 = "Basri"; // Stack - C++ manage this
-    qInfo() << &name1 << "Size:" << name1.length();
+    // // Pointers
+    // QString name1 = "Basri"; // Stack - C++ manage this
+    // qInfo() << &name1 << "Size:" << name1.length();
 
-    pointerTest(name1);
-    pointerTest2(&name1);
+    // pointerTest(name1);
+    // pointerTest2(&name1);
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    QString name2 = "Mustafa"; // Stack - C++ manage this
-    QString *description = new QString("Hello Pointer"); // Heap - We manage
-    qInfo() << description;
+    // QString name2 = "Mustafa"; // Stack - C++ manage this
+    // QString *description = new QString("Hello Pointer"); // Heap - We manage
+    // qInfo() << description;
 
-    display(description);
+    // display(description);
 
-    delete description; // destroying it
+    // delete description; // destroying it
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    // Automatic memory mangement
-    qInfo() << "Starting";
-    wow();
-    qInfo() << "Finished";
+    // // Automatic memory mangement
+    // qInfo() << "Starting";
+    // wow();
+    // qInfo() << "Finished";
 
-    qInfo("***********************************************");
+    // qInfo("***********************************************");
 
-    // QObject parent child relationships
-    Test *parent = new Test(&a);
-    parent->dog = new Animal(parent, "Hasan");
-    delete parent;
+    // // QObject parent child relationships
+    // Test *parent = new Test(&a);
+    // parent->dog = new Animal(parent, "Hasan");
+    // delete parent;
 
     return a.exec();
 }
